@@ -1,0 +1,9 @@
+# Example code for image processing in Python
+from PIL import Image
+
+def grayscale(image_path):
+    image = Image.open(image_path)
+    grayscale_image = image.convert('L')
+    grayscale_image.show()
+
+grayscale('image.jpg')
